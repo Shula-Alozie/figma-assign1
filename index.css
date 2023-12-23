@@ -1,0 +1,373 @@
+body{
+    font-family: 'Inter', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    margin: 0px;
+}
+.main{
+    position: relative; 
+    isolation: isolate;
+
+}
+.main::after{
+    background: var(--CL-Green, #2EC4B6);
+    position: absolute;
+    content: ''; 
+    opacity: 15%;
+    inset: 0px;
+    z-index: -1;
+
+}
+form  {
+    gap: 30px;
+}
+label{
+    color: var(--Text-Headings, #011C34);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.1px;
+}
+select {
+    color: var(--CL-Grey, #737373);
+    border-radius: 2px;
+    border: 1px solid var(--CL-Gray-3, #F0F0F0);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px ;
+    padding-right: 20px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 20px; /* 142.857% */
+    letter-spacing: 0.2px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: transparent;
+    background-image: url("./assets/u_angle-down.png");
+    background-repeat: no-repeat;
+    background-position-x: 95%;
+    background-position-y: 10px;
+}
+select:focus{
+    outline: none;
+    border: 3px solid  #2EC4B6;
+}
+.input{
+    border-radius: 2px;
+    border: 1px solid var(--CL-Gray-3, #F0F0F0);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px ;
+}
+.input:focus{
+    outline: none;
+    border: 3px solid  #2EC4B6;
+}
+.icon[type="date"]::-webkit-calendar-picker-indicator::after{
+    padding-left: 5vw;
+    color: var(--CL-Gray-3, #F0F0F0);
+}
+.icon[type=date]{
+    color: var(--CL-Grey, #737373);  
+}
+.icon[type="date"]::-webkit-calendar-picker-indicator {
+    /* width: 20px;
+    height: 20px; */
+    content: url("./assets/u_a_calendar-alt.png");
+  }
+.activityInput{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.activityInput svg{
+    margin-left: -5vw;
+}
+.activityInput{
+    /* width: 38vw; */
+    height: 44px;
+    border-radius: 2px;
+    border: 1px solid var(--CL-Gray-3, #F0F0F0);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px ;
+}
+.passwordDiv{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.passwordInput{
+    border-radius: 2px;
+    border: 1px solid var(--CL-Gray-3, #F0F0F0);
+    padding: 0 16px ;
+    background-image: url("./assets/show.png");
+    background-repeat: no-repeat;
+    background-position-x: 95%;
+    background-position-y: 15px;
+}
+.passwordInput:focus{
+    outline: none;
+    border: 1px solid  #2EC4B6;
+}
+.passwordInput svg{
+    position: absolute;
+    z-index: 1;
+    margin-right: 500px;
+} 
+/* .activityInput input:focus{
+    border: none;
+}
+.select1{
+    
+}
+.select{
+    /* border: 1px solid var(--CL-Gray-3, #F0F0F0); 
+    color: var(--CL-Grey, #737373);
+    font-family: Sofia Pro;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 20px; /* 142.857% */
+    /*letter-spacing: 0.2px; */
+/* } */
+.activitySelect{
+    /* width: 38vw;
+    height: 48px;
+    border-radius: 2px;*/
+    border: 1px solid var(--CL-Gray-3, #F0F0F0); 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+button{
+    background-color: #2EC4B6;
+    fill: var(--CL-Green, #2EC4B6);
+    filter: drop-shadow(0px 10px 40px rgba(0, 0, 0, 0.10));
+    cursor: pointer;
+    border: none;
+    border-radius: 2px;
+    color: var(--Basic-100, #FFF);
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.2px;
+}
+
+.register span{
+    color: var(--CL-Green, #2EC4B6);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 25px;
+    text-decoration-line: underline;
+    cursor: pointer;
+}
+@media screen  and (min-width: 300px) and (max-width:700px){
+    .main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /* height: 1294px; */
+        padding: 30px 24px;
+        gap: 40px;
+    }
+    .main section:first-child{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .main section:last-child form{
+        width: 327px;
+        /* height: 870px; */
+        border-radius: 6px;
+        background: #FFF;
+        box-shadow: 0px 4px 50px 0px rgba(4, 8, 19, 0.10);
+        padding: 24px 16px;
+        
+    }
+    .activity{
+        padding: 14px 0;
+    }
+    .individualsDiv{
+        font-family: Brown;
+        gap: -12px;
+    }
+    .individualsDiv p{
+        color: var(--CL-Grey, #737373);
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 25px; /* 156.25% */
+    }
+    .individualsDiv h1{
+        color: var(--CL-Black, #000B0A);
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: -0.8px;
+    }
+    form{
+        gap: 30px;
+    }
+    form > div {
+        display: flex;
+        flex-direction: column;
+    }
+    form > div > div {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+    select {
+        width: 326px;
+        height: 48px;
+    }
+    .select{
+
+    }
+    .input{
+        width: 295px;
+        height: 48px;
+    }
+    .passwordInput{
+        width: 295px;
+        height: 48px;
+    }
+    .activity1{
+        /* display: flex;
+        flex-direction: column; */
+        gap: 10px;
+    }
+    button{
+        /* width: 295px; */
+        height: 48px;
+    }
+    .register{
+        display: none;
+    }
+    .register1{
+        color: #000;
+        text-align: center;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 25px; /* 178.571% */
+        padding: 0 40px;
+    }
+    .main section:last-child span{
+        color: #2EC4B6;
+        cursor: pointer;
+    }
+}
+@media screen and (min-width: 702px)  and (max-width:1440px) {
+    .main{
+        /* height: 840px; */
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 80px 140px;
+
+    }
+    .main section:first-child{
+        display: flex;
+        flex-direction: column;
+        width: 50vw;
+        /* padding: 0 100px; */
+        /* padding-top: 204px; */
+    }
+    /* .main section:last-child {
+        width: 50vw;
+    } */
+    .main section:last-child form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 40vw;
+        height: 679px;
+        flex-shrink: 0;
+        border-radius: 6px;
+        background: #FFF;
+        box-shadow: 0px 4px 50px 0px rgba(4, 8, 19, 0.10);
+        padding: 6px 40px;
+    }
+    .individualsDiv{
+        font-family: Brown;
+    }
+    .individualsDiv p{
+        color: var(--CL-Grey, #737373);
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 25px; /* 156.25% */
+    }
+    .individualsDiv h1{
+        color: var(--CL-Black, #000B0A);
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 50px; /* 125% */
+        letter-spacing: -0.8px;
+    }
+    /* form > div{
+        /* gap: 10px; */
+    /* }  */
+    /* form > div >div{
+    } */
+    form > div {
+        display: flex;
+        /* align-items: center; */
+        justify-content: space-between;
+        gap: 16;
+    }
+    
+    form > div > div {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    select{
+        width: 19vw;
+        height: 48px;
+    }
+    .select{
+        width: 40vw;
+    }
+    .input{
+        width: 17vw;
+        height: 48px;
+    }
+    .passwordInput{
+        width: 38vw;
+        height: 48px;
+    }
+    .activity1{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    button{
+        width: 40vw;
+        height: 48px;
+    }
+    .register{
+        margin-top: -14px;
+        text-align: center;
+        color: #000;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 25px; /* 178.571% */
+    }
+    .register1{
+        display: none;
+    }
+}
